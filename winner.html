@@ -1,0 +1,125 @@
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+  <!-- Code by Angela Delise 
+  https://codepen.io/angeladelise/pen/xxGoaXe
+-->
+<style> h1 {   text-align: center; }  h1 {   text-align: center; } p {   text-align: center; }  
+    h2 {   text-align: center; } 
+    
+    
+    
+    </style>
+    <style>
+    h3 {
+      text-align: center;
+      font-size: 60px;
+      margin-top: 0px;
+    }
+    </style>
+
+<link rel="stylesheet" href="style11.css">
+
+</head>
+
+<body>
+
+
+
+
+    <h1 style="color:#E37A77FE;font-size:45px;">Winners</h1> <h3 id="demo"  style="color:#E37A77FE;font-size:40px;" ></h3>   <p style="color:#E37A77FE;font-size:30px;"> .</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="wrapper-grid">
+    <div class="container">
+      <div class='banner-img'></div>
+      <img src='ss1.jpg' alt='profile image' class="profile-img">
+      <h1 class="name">Athul.V.Sunny</h1>
+      <p class="description">Scored 25/25----Class:9, congratulaions Athul</p>
+      <button class='btn'>1'st prize </button>
+    </div>
+
+    <div class="container">
+      <div class='banner-img'></div>
+      <img src='ss2.jpg' alt='profile image' class="profile-img">
+      <p class="name">Leya Elizabeth Mathew</p>
+      <p class="description">Scored 25/25----Class:7, congratulaions Leya</p>
+      <button class='btn'>1'st prize </button>
+    </div>
+
+    <div class="container">
+      <div class='banner-img'></div>
+      <img src='ss3.jpg' alt='profile image' class="profile-img">
+      <p class="name">Christo Siju</p>
+      <p class="description">Scored 24/25----Class:7, congratulaions Athul</p>
+      <button class='btn'>2'nd prize </button>
+    </div>
+
+
+
+    <div class="container">
+        <div class='banner-img'></div>
+        <img src='ss4.jpg' alt='profile image' class="profile-img">
+        <p class="name">Tiswin Twins</p>
+        <p class="description">Scored 24/25----Class:9, congratulaions Athul</p>
+        <button class='btn'>2'nd prize </button>
+      </div>
+
+
+  </div>
+
+
+
+
+
+  <script>
+
+    var countDownDate = new Date("Jul 24, 2021 19:45:00").getTime();
+    
+    
+    var x = setInterval(function() {
+    
+     
+      var now = new Date().getTime();
+     
+      var distance = countDownDate - now;
+        
+     
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+        
+     
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script>
+
+
+
+ 
+</body>
