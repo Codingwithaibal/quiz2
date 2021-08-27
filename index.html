@@ -1,118 +1,135 @@
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
-  <!-- Code by Angela Delise 
-  https://codepen.io/angeladelise/pen/xxGoaXe
--->
-<style> h1 {   text-align: center; }  h1 {   text-align: center; } p {   text-align: center; }  
-    h2 {   text-align: center; } 
-    
-    
-    
-    </style>
-    <style>
-    h3 {
-      text-align: center;
-      font-size: 60px;
-      margin-top: 0px;
-    }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Contact card</title>
 
-<link rel="stylesheet" href="style11.css">
 
+    <style> h1 {   text-align: center; }  h1 {   text-align: center; } p {   text-align: center; }  
+        h2 {   text-align: center; } 
+        
+        
+        
+        </style>
+        <style>
+        h3 {
+          text-align: center;
+          font-size: 60px;
+          margin-top: 0px;
+        }
+        </style>
+    
 </head>
-
 <body>
-
-
-
-
-    <h1 style="color:#E37A77FE;font-size:45px;">Winners</h1> <h3 id="demo"  style="color:#E37A77FE;font-size:40px;" ></h3>   <p style="color:#E37A77FE;font-size:30px;"> .</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="wrapper-grid">
-    <div class="container">
-      <div class='banner-img'></div>
-      <img src='40_edited.jpg' alt='profile image' class="profile-img">
-      <h1 class="name">Nibin Ciby</h1>
-      <p class="description">Scored 25/25----Class:9, congratulaions Nibin</p>
-      <button class='btn'>1'st prize </button>
-    </div>
-
-    <div class="container">
-      <div class='banner-img'></div>
-      <img src='41edited.jpg' alt='profile image' class="profile-img">
-      <p class="name">Tiswin Twins </p>
-      <p class="description">Scored 25/25----Class:9, congratulaions Tiswin</p>
-      <button class='btn'>1'st prize </button>
-    </div>
-
-    <div class="container">
-      <div class='banner-img'></div>
-      <img src='42edited.jpg' alt='profile image' class="profile-img">
-      <p class="name">Christo Siju</p>
-      <p class="description">Scored 25/25----Class:7, congratulaions Christo</p>
-      <button class='btn'>1'st prize</button>
-    </div>
-
-
-
+    <h1 style="color:#36eb7b;font-size:45px;">Winners</h1> <h3 id="demo"  style="color:#df0f08fe;font-size:40px;" ></h3><p style="color:#36eb7b;font-size:30px;">Left for Quiz</p>
     
 
-  </div>
 
 
 
-
-
-  <script>
-
-    var countDownDate = new Date("Aug 28, 2021 19:45:00").getTime();
-    
-    
-    var x = setInterval(function() {
-    
-     
-      var now = new Date().getTime();
-     
-      var distance = countDownDate - now;
         
-     
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+
+
+
+
+
+
+
+
+        <section class="section-contact">
+            <div class="contact-card">
+                <div class="card-image">
+                    <img src="40_edited.jpg" alt="Put image here">
+                    <h2>Nibin Ciby</h2>
+                    <h5>Class:9</h5>
+                </div>
+                <div class="card-text">
+                    <p>Scored 25/25, congratulaions Nibin</p>
+                    <a href="#" class="btn">1'st Prize</a>
+                </div>
+            </div><br>
+
+
+            <div class="contact-card">
+                <div class="card-image">
+                    <img src="41edited.jpg" alt="Put image here">
+                    <h2>Tiswin Twins</h2>
+                    <h5>Class:9</h5>
+                </div>
+                <div class="card-text">
+                    <p>Scored 25/25, congratulaions Tiswin.</p>
+                    <a href="#" class="btn">1'st Prize</a>
+                </div>
+            </div>
+
+        </div><br>
+
+
+        <div class="contact-card">
+            <div class="card-image">
+                <img src="42edited.jpg" alt="Put image here">
+                <h2>Christo Siju</h2>
+                <h5>Class;7</h5>
+            </div>
+            <div class="card-text">
+                <p>Scored 25/25, congratulaions .</p>
+                <a href="#" class="btn">2'nd Prize</a>
+            </div>
+        </div>
+
+
+
+
+    </div><br>
+
+
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+
+            var countDownDate = new Date("Aug 28, 2021 19:45:00").getTime();
+            
+            
+            var x = setInterval(function() {
+            
+             
+              var now = new Date().getTime();
+             
+              var distance = countDownDate - now;
+                
+             
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+              
+              document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+              + minutes + "m " + seconds + "s ";
+                
+             
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+              }
+            }, 1000);
+            </script>
+
+
         
-      
-      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
-        
-     
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-      }
-    }, 1000);
-    </script>
-
-
-
- 
 </body>
+</html>
